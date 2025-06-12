@@ -1,0 +1,68 @@
+import type { Project, BlogPost } from '@/types';
+
+export const mockProjects: Project[] = [
+  {
+    id: '1',
+    title: 'AI-Powered Code Reviewer',
+    description: 'A tool that uses machine learning to analyze pull requests and provide feedback on code quality and potential bugs.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'abstract code',
+    tags: ['AI', 'Machine Learning', 'DevTools', 'Python'],
+    projectUrl: '#',
+    repoUrl: '#',
+  },
+  {
+    id: '2',
+    title: 'E-commerce Analytics Platform',
+    description: 'A comprehensive dashboard for e-commerce businesses to track sales, customer behavior, and inventory.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'dashboard analytics',
+    tags: ['React', 'Node.js', 'Data Visualization', 'SaaS'],
+    projectUrl: '#',
+  },
+  {
+    id: '3',
+    title: 'Mobile Health Companion App',
+    description: 'A cross-platform mobile application for tracking fitness goals, nutrition, and mental well-being.',
+    imageUrl: 'https://placehold.co/600x400.png',
+    dataAiHint: 'mobile health',
+    tags: ['Flutter', 'Firebase', 'Mobile App', 'HealthTech'],
+    repoUrl: '#',
+  },
+];
+
+export const mockBlogPosts: BlogPost[] = [
+  {
+    slug: 'mastering-serverless-architectures',
+    title: 'Mastering Serverless Architectures in 2024',
+    date: '2024-07-15',
+    excerpt: 'An in-depth guide to designing, deploying, and managing serverless applications for scalability and cost-efficiency.',
+    content: '<p>Serverless computing has revolutionized the way we build and deploy applications. This post explores the core concepts, benefits, and challenges of serverless architectures. We will dive into popular platforms like AWS Lambda, Google Cloud Functions, and Azure Functions, providing practical examples and best practices.</p><h3>Key Topics Covered:</h3><ul><li>Understanding Serverless vs. Traditional Architectures</li><li>Choosing the Right Serverless Provider</li><li>Function as a Service (FaaS) Deep Dive</li><li>Event-Driven Design Patterns</li><li>Managing State in Serverless Applications</li><li>Monitoring and Debugging Serverless Apps</li><li>Cost Optimization Strategies</li></ul><p>Join us as we navigate the landscape of serverless technology and unlock its potential for your next project.</p>',
+    imageUrl: 'https://placehold.co/800x450.png',
+    dataAiHint: 'cloud computing',
+    author: 'Ilman Teguh Prasetya',
+    tags: ['Serverless', 'Cloud Computing', 'DevOps', 'Architecture'],
+  },
+  {
+    slug: 'the-rise-of-generative-ai-in-software-development',
+    title: 'The Rise of Generative AI in Software Development',
+    date: '2024-06-28',
+    excerpt: 'Exploring how generative AI tools are transforming the software development lifecycle, from code generation to testing.',
+    content: '<p>Generative AI is no longer a futuristic concept but a practical tool enhancing developer productivity. This article discusses the impact of AI code assistants, automated testing tools, and AI-driven project management. We will look at tools like GitHub Copilot, ChatGPT for developers, and how they are being integrated into modern workflows.</p><h3>Impact Areas:</h3><ul><li>Automated Code Generation</li><li>Enhanced Debugging with AI</li><li>AI-Powered Software Testing</li><li>Natural Language to Code Conversion</li><li>Ethical Considerations and Challenges</li></ul><p>Discover how to leverage these powerful AI tools while understanding their limitations and ethical implications in the software engineering field.</p>',
+    imageUrl: 'https://placehold.co/800x450.png',
+    dataAiHint: 'artificial intelligence',
+    author: 'Ilman Teguh Prasetya',
+    tags: ['Generative AI', 'Software Development', 'Machine Learning', 'Productivity'],
+  },
+  {
+    slug: 'building-scalable-microservices-with-go',
+    title: 'Building Scalable Microservices with Go',
+    date: '2024-05-10',
+    excerpt: 'A practical guide to developing high-performance, scalable microservices using the Go programming language.',
+    content: '<p>Go (Golang) has become a popular choice for building microservices due to its performance, concurrency features, and simplicity. This post walks through the process of designing and implementing microservices in Go, covering topics such as:</p><ul><li>Choosing a Microservice Framework (e.g., Gin, Echo)</li><li>Inter-Service Communication (gRPC, REST)</li><li>Containerization with Docker and Kubernetes</li><li>Service Discovery and Load Balancing</li><li>Observability: Logging, Metrics, and Tracing</li></ul><p>Learn best practices for structuring your Go microservices, ensuring they are robust, maintainable, and ready for production scale.</p>',
+    imageUrl: 'https://placehold.co/800x450.png',
+    dataAiHint: 'coding golang',
+    author: 'Ilman Teguh Prasetya',
+    tags: ['Go', 'Microservices', 'Backend', 'Scalability'],
+  },
+];
