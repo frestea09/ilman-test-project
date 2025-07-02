@@ -1,19 +1,21 @@
 "use client";
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Newspaper, Home, Briefcase, LogOut } from 'lucide-react';
+import { Newspaper, Home, Briefcase, LogOut, BarChart3 } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/atoms/button';
 import { Separator } from '@/components/atoms/separator';
+import { useTranslation } from '@/hooks/use-translation';
 
 const adminNavLinks = [
-  { href: '/admin/blog', label: 'Blog Posts', icon: Newspaper },
-  // Add other admin links here in the future
+  { href: '/admin/dashboard', key: 'nav.dashboard', icon: BarChart3 },
+  { href: '/admin/blog', key: 'nav.blog_posts', icon: Newspaper },
 ];
 
 export function AdminSidebar() {
   const pathname = usePathname();
   const router = useRouter();
+  const { t } = useTranslation();
 
   const handleLogout = () => {
     try {
@@ -47,7 +49,7 @@ export function AdminSidebar() {
                 )}
               >
                 <link.icon className="h-4 w-4" />
-                <span>{link.label}</span>
+                <span>{t(link.key)}</span>
               </Link>
             ))}
           </nav>

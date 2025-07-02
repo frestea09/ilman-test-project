@@ -5,6 +5,7 @@ import { Badge } from '@/components/atoms/badge';
 import { CalendarDays, UserCircle } from 'lucide-react';
 import { format } from 'date-fns';
 import type { Metadata, ResolvingMetadata } from 'next';
+import { EndorsementCard } from '@/components/molecules/EndorsementCard';
 
 interface BlogPostPageProps {
   params: {
@@ -85,6 +86,8 @@ export default function BlogPostPage({ params }: BlogPostPageProps) {
         className="prose prose-lg dark:prose-invert max-w-none"
         dangerouslySetInnerHTML={{ __html: post.content }}
       />
+
+      <EndorsementCard />
     </article>
   );
 }

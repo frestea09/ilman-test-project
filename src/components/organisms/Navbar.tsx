@@ -21,7 +21,7 @@ export function Navbar() {
     { href: '/blog', label: t('nav.blog'), icon: Newspaper },
     { href: '/summarize', label: t('nav.summarize'), icon: WandSparkles },
     { href: '/contact', label: t('nav.contact'), icon: Mail },
-    { href: '/dashboard', label: t('nav.dashboard'), icon: BarChart3 },
+    { href: '/admin/dashboard', label: t('nav.dashboard'), icon: BarChart3 },
     { href: '/admin/blog', label: t('nav.admin'), icon: Shield },
   ];
 

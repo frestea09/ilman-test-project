@@ -6,7 +6,8 @@
     "summarize": "Summarize",
     "contact": "Contact",
     "dashboard": "Dashboard",
-    "admin": "Admin"
+    "admin": "Admin",
+    "blog_posts": "Blog Posts"
   },
   "hero": {
     "greeting": "Hi, I'm Ilman Teguh Prasetya",
