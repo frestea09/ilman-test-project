@@ -1,3 +1,4 @@
+"use client";
 import { mockProjects, mockBlogPosts } from '@/lib/mockData';
 import { ProjectCard } from '@/components/molecules/ProjectCard';
 import { BlogPostCard } from '@/components/molecules/BlogPostCard';
@@ -5,26 +6,27 @@ import { NewsletterForm } from '@/components/molecules/NewsletterForm';
 import { Button } from '@/components/atoms/button';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
+import { useTranslation } from '@/hooks/use-translation';
 
 export default function HomePage() {
+  const { t } = useTranslation();
   return (
     <div className="space-y-16 md:space-y-24">
       {/* Hero Section */}
       <section className="py-16 md:py-24 bg-card">
         <div className="container text-center">
           <h1 className="font-headline text-4xl md:text-6xl font-bold tracking-tight">
-            Hi, I&apos;m Ilman Teguh Prasetya
+            {t('hero.greeting')}
           </h1>
           <p className="mt-6 text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto">
-            A passionate Software Engineer specializing in building robust and scalable web applications. 
-            Welcome to my personal space where I share my projects, thoughts, and journey in the world of tech.
+            {t('hero.introduction')}
           </p>
           <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90 text-primary-foreground">
-              <Link href="/projects">View My Work</Link>
+              <Link href="/projects">{t('buttons.viewWork')}</Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href="/contact">Get In Touch</Link>
+              <Link href="/contact">{t('buttons.getInTouch')}</Link>
             </Button>
           </div>
         </div>

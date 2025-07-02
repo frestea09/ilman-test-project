@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Home",
+    "projects": "Projects",
+    "blog": "Blog",
+    "summarize": "Summarize",
+    "contact": "Contact",
+    "dashboard": "Dashboard",
+    "admin": "Admin"
+  },
+  "hero": {
+    "greeting": "Hi, I'm Ilman Teguh Prasetya",
+    "introduction": "A passionate Software Engineer specializing in building robust and scalable web applications. Welcome to my personal space where I share my projects, thoughts, and journey in the world of tech."
+  },
+  "buttons": {
+    "viewWork": "View My Work",
+    "getInTouch": "Get In Touch"
+  }
+}

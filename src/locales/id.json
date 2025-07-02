@@ -1,0 +1,19 @@
+{
+  "nav": {
+    "home": "Beranda",
+    "projects": "Proyek",
+    "blog": "Blog",
+    "summarize": "Ringkas",
+    "contact": "Kontak",
+    "dashboard": "Dasbor",
+    "admin": "Admin"
+  },
+  "hero": {
+    "greeting": "Hai, saya Ilman Teguh Prasetya",
+    "introduction": "Seorang Insinyur Perangkat Lunak yang bersemangat dalam membangun aplikasi web yang kuat dan dapat diskalakan. Selamat datang di ruang pribadi saya di mana saya berbagi proyek, pemikiran, dan perjalanan saya di dunia teknologi."
+  },
+  "buttons": {
+    "viewWork": "Lihat Karya Saya",
+    "getInTouch": "Hubungi Saya"
+  }
+}
