@@ -1,5 +1,5 @@
 import { mockBlogPosts } from '@/lib/mockData';
-import { BlogPostCard } from '@/components/shared/BlogPostCard';
+import { BlogPostCard } from '@/components/molecules/BlogPostCard';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

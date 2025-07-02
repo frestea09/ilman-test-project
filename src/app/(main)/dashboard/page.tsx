@@ -1,14 +1,14 @@
 "use client"; // Required for Recharts
 
 import { BarChart, LineChartIcon, Users, TrendingUp, AlertTriangle } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '@/components/atoms/card';
 import {
   ChartContainer,
   ChartTooltip,
   ChartTooltipContent,
   ChartLegend,
   ChartLegendContent,
-} from "@/components/ui/chart"
+} from "@/components/atoms/chart"
 import { Bar, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, LineChart as RechartsLineChart, BarChart as RechartsBarChart } from 'recharts';
 import React from 'react';
 

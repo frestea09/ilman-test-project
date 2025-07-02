@@ -1,8 +1,8 @@
 import { mockProjects, mockBlogPosts } from '@/lib/mockData';
-import { ProjectCard } from '@/components/shared/ProjectCard';
-import { BlogPostCard } from '@/components/shared/BlogPostCard';
-import { NewsletterForm } from '@/components/forms/NewsletterForm';
-import { Button } from '@/components/ui/button';
+import { ProjectCard } from '@/components/molecules/ProjectCard';
+import { BlogPostCard } from '@/components/molecules/BlogPostCard';
+import { NewsletterForm } from '@/components/molecules/NewsletterForm';
+import { Button } from '@/components/atoms/button';
 import Link from 'next/link';
 import { ArrowRight } from 'lucide-react';
 

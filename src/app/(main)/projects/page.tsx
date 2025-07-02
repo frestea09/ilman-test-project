@@ -1,5 +1,5 @@
 import { mockProjects } from '@/lib/mockData';
-import { ProjectCard } from '@/components/shared/ProjectCard';
+import { ProjectCard } from '@/components/molecules/ProjectCard';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

@@ -1,4 +1,4 @@
-import { ContactForm } from '@/components/forms/ContactForm';
+import { ContactForm } from '@/components/molecules/ContactForm';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

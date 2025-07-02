@@ -1,4 +1,4 @@
-import { SummarizeForm } from '@/components/forms/SummarizeForm';
+import { SummarizeForm } from '@/components/molecules/SummarizeForm';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {

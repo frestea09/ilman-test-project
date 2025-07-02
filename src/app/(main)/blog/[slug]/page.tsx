@@ -1,7 +1,7 @@
 import { mockBlogPosts } from '@/lib/mockData';
 import Image from 'next/image';
 import { notFound } from 'next/navigation';
-import { Badge } from '@/components/ui/badge';
+import { Badge } from '@/components/atoms/badge';
 import { CalendarDays, UserCircle } from 'lucide-react';
 import { format } from 'date-fns';
 import type { Metadata, ResolvingMetadata } from 'next';
