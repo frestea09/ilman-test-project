@@ -20,3 +20,14 @@ export interface BlogPost {
   tags?: string[];
   dataAiHint?: string;
 }
+
+export interface Endorsement {
+  id: string;
+  productName: string;
+  company: string;
+  description: string;
+  imageUrl: string;
+  link: string;
+  status: 'active' | 'inactive';
+  dataAiHint?: string;
+}

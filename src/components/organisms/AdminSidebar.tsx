@@ -1,7 +1,7 @@
 "use client";
 import Link from 'next/link';
 import { usePathname, useRouter } from 'next/navigation';
-import { Newspaper, Home, Briefcase, LogOut, BarChart3 } from 'lucide-react';
+import { Newspaper, Home, Briefcase, LogOut, BarChart3, Handshake } from 'lucide-react';
 import { cn } from '@/lib/utils';
 import { Button } from '@/components/atoms/button';
 import { Separator } from '@/components/atoms/separator';
@@ -10,6 +10,7 @@ import { useTranslation } from '@/hooks/use-translation';
 const adminNavLinks = [
   { href: '/admin/dashboard', key: 'nav.dashboard', icon: BarChart3 },
   { href: '/admin/blog', key: 'nav.blog_posts', icon: Newspaper },
+  { href: '/admin/endorsements', key: 'nav.endorsements', icon: Handshake },
 ];
 
 export function AdminSidebar() {

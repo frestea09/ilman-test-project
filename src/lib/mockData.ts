@@ -1,4 +1,4 @@
-import type { Project, BlogPost } from '@/types';
+import type { Project, BlogPost, Endorsement } from '@/types';
 
 export const mockProjects: Project[] = [
   {
@@ -64,5 +64,38 @@ export const mockBlogPosts: BlogPost[] = [
     dataAiHint: 'coding golang',
     author: 'Ilman Teguh Prasetya',
     tags: ['Go', 'Microservices', 'Backend', 'Scalability'],
+  },
+];
+
+export const mockEndorsements: Endorsement[] = [
+  {
+    id: 'endo-1',
+    productName: 'DevBoost AI Assistant',
+    company: 'CodeCrafters Inc.',
+    description: 'Boost your productivity with an AI-powered coding assistant that provides smart suggestions and autocompletions.',
+    imageUrl: 'https://placehold.co/300x300.png',
+    dataAiHint: 'AI assistant robot',
+    link: '#',
+    status: 'active',
+  },
+  {
+    id: 'endo-2',
+    productName: 'CloudDeploy Pro',
+    company: 'InfraWorks',
+    description: 'Deploy your applications to any cloud provider with a single click. Seamless, fast, and reliable.',
+    imageUrl: 'https://placehold.co/300x300.png',
+    dataAiHint: 'cloud deployment',
+    link: '#',
+    status: 'active',
+  },
+  {
+    id: 'endo-3',
+    productName: 'SecureKey Vault',
+    company: 'CyberSafe Ltd.',
+    description: 'Keep your API keys and secrets safe with our enterprise-grade security vault.',
+    imageUrl: 'https://placehold.co/300x300.png',
+    dataAiHint: 'security vault',
+    link: '#',
+    status: 'inactive',
   },
 ];
