@@ -1,8 +1,10 @@
 "use client";
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
-import { Newspaper, LayoutDashboard, Home, Briefcase } from 'lucide-react';
+import { usePathname, useRouter } from 'next/navigation';
+import { Newspaper, Home, Briefcase, LogOut } from 'lucide-react';
 import { cn } from '@/lib/utils';
+import { Button } from '@/components/atoms/button';
+import { Separator } from '@/components/atoms/separator';
 
 const adminNavLinks = [
   { href: '/admin/blog', label: 'Blog Posts', icon: Newspaper },
@@ -11,10 +13,22 @@ const adminNavLinks = [
 
 export function AdminSidebar() {
   const pathname = usePathname();
+  const router = useRouter();
+
+  const handleLogout = () => {
+    try {
+      localStorage.removeItem('isLoggedIn');
+      router.push('/login');
+    } catch (error) {
+      console.error("Could not access localStorage", error);
+      // Still try to navigate
+      router.push('/login');
+    }
+  };
 
   return (
     <aside className="hidden w-64 flex-shrink-0 border-r bg-background md:block">
-      <div className="flex h-full flex-col gap-2">
+      <div className="flex h-full flex-col">
         <div className="flex h-16 items-center border-b px-6">
            <Link href="/" className="flex items-center gap-2 font-semibold">
             <Briefcase className="h-6 w-6 text-primary" />
@@ -38,7 +52,8 @@ export function AdminSidebar() {
             ))}
           </nav>
         </div>
-         <div className="mt-auto p-4">
+         <div className="mt-auto space-y-2 p-4">
+            <Separator />
             <Link
               href="/"
               className="flex items-center gap-3 rounded-lg px-3 py-2 text-muted-foreground transition-all hover:text-primary"
@@ -46,6 +61,10 @@ export function AdminSidebar() {
               <Home className="h-4 w-4" />
               <span>Back to Site</span>
             </Link>
+            <Button variant="ghost" className="w-full justify-start px-3 text-muted-foreground hover:text-primary" onClick={handleLogout}>
+              <LogOut className="mr-3 h-4 w-4" />
+              <span>Logout</span>
+            </Button>
           </div>
       </div>
     </aside>
